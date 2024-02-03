@@ -3,7 +3,16 @@ FROM python:3.11-slim
 WORKDIR /code 
 
 COPY ./requirements.txt ./
+
+RUN apt-get update && apt-get install git -y
+
 RUN pip install --no-cache-dir -r requirements.txt
+
+# install the whisper directly from source
+RUN pip install "git+https://github.com/openai/whisper.git"
+
+# we need ffmpeg
+RUN apt-get update && apt-get install -y ffmpeg
 
 COPY ./src ./src
 
