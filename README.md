@@ -14,8 +14,8 @@ This project provides a custom API wrapper for the open-source Whisper model usi
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd custom-whispe-api
+git clone https://github.com/valiantlynx/custom-whisper-api.git
+cd custom-whisper-api
 ```
 
 ### 2. Build and Start the Docker Containers
