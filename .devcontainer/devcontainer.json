@@ -1,8 +1,8 @@
 {
   "name": "custom-whisper-api",
-  "dockerComposeFile": ["docker-compose.yml"],
-  "service": "app",
-  "workspaceFolder": "/workspace",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "whisper",
+  "workspaceFolder": "/code",
   "customizations": {
     "vscode": {
       "extensions": [
