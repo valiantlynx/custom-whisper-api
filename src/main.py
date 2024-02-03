@@ -1,13 +1,10 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException
-from fastapi.responses import RedirectResponse, JSONResponse, HTMLResponse
+from fastapi.responses import JSONResponse, HTMLResponse
 import debugpy
 from typing import List
 from tempfile import NamedTemporaryFile
-import random
-import json
 import whisper
 import torch
-from src.model import dfs
 
 app = FastAPI()
 
